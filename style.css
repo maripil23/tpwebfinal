@@ -384,3 +384,9 @@ h2 {
    display: block; /
 } 
 }
+
+.carousel{
+   width: 40%;
+   height: 40%;
+   margin-left: 29%;
+}
