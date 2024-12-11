@@ -1,4 +1,4 @@
-class Jugador extends Personaje{
+class jugador extends personaje{
   
   constructor(posX, posY, imagen, velocidad){    
     super(posX, posY, imagen, velocidad)
