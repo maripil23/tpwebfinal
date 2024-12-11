@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding</title>
+  <link href="coding.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+  <!---- NAVEGACION ---->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">LA NOCHE BOCA ARRIBA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="historia.html">Historia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="coding.html">Coding</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="galeria.html">Galería</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Título principal -->
+  <header class="titulos">
+    <div class="container">
+      <div class="p-3">
+        <h1 class="title2 text-center">Coding</h1>
+      </div>
+      <div class="p-3">
+        <div class="container text-center">
+          <h3>Un resumen de nuestro proceso y de lo fundamental de nuestro código.</h3>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Botones centrados -->
+  <div class="d-flex justify-content-center gap-2 my-3">
+    <a class="btn btn-primary" data-bs-toggle="collapse" href="#parte1" role="button" aria-expanded="false" aria-controls="collapseExample">
+      Parte 1
+    </a>
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" href="#parte2" data-bs-target="#parte2" aria-expanded="false" aria-controls="collapseExample">
+      Parte 2
+    </button>
+  </div>
+
+  <!-- Parte 1 - Tarjetas centradas -->
+  <div class="collapse" id="parte1">
+    <div class="d-flex justify-content-center my-4">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">Consigna</h3>
+          <p class="card-text">Desarrollo del flujo principal del relato: la historia debe estar articulada en 12 (15 mejor) pantallas (cómo mínimo) y 3 finales diferentes. Cada pantalla debe tener:.</p>
+          <ul>
+            <li>Textos narrativos.</li>
+            <li>Imágenes ilustrativas sobre el desarrollo del relato generadas con IA.</li>
+            <li>Controladores/ Zonas interactivas de acción para avanzar con el desarrollo de la historia en las pantallas.</li>
+          </ul>
+          <p class="card-text">Al llegar a cualquiera de los finales se debe permitir volver al inicio y comenzar nuevamente.</p>
+          <p class="card-text">Una pantalla de créditos con los datos del alumno y el autor de la obra.</p>
+          <h4 class="card-title">Antes de empezar, cabe destacar que básicamente el corazón de nuestro código son las funciones.</h4>
+          <br>
+          <h5 class="card-title">Pantallas</h5>
+          <p class="card-text">Para las pantallas hicimos dos funciones fundamentales, además de que depende de un arreglo de imágenes.</p>
+          <img src="arreglodeimagenes.png" class="imagenparteuno img-fluid">
+          <p class="card-text">Teníamos 16 imágenes que las cargamos en el preload indicando la ruta de las mismas, 
+            nombrando a cada imagen con el número que corresponde a la posición del arreglo en el que se encuentran.</p>
+          <img src="funcionpantallas.png" class="imagenparteuno img-fluid">
+          <p class="card-text">Principalmente, la función cambiar escena y ejecutar botones el cual funciona a base de condicionales y gracias a la función cambiar escena, es lo que hace que se muevan las pantallas.</p>
+          <br>
+          <img src="funcionpantallasdos.png" class="imagenparteuno img-fluid">
+          <p class="card-text">La función ejecutarRectYText es para que se visualice correctamente el texto y se dibujen los botones en la pantalla.</p>
+          <br>
+          <img src="funcionpantallastres.png" class="imagenparteuno img-fluid">
+          <br>
+          <p class="card-text">Y esta función es la que detecta la zona en la que se pueden presionar los botones.</p>
+        </div>
+      
+      </div>
+  </div>
+
+  <!-- Parte 2 - Tarjetas centradas -->
+  <div class="collapse"  id="parte2">
+    <div class="d-flex justify-content-center my-4">
+      <div class="card">
+     
+        <div class="card-body">
+          <h3 class="card-title">Consigna</h3>
+          <p class="card-text">Incorporar una funcionalidad dentro del flujo del relato a partir de un conflicto de carácter lúdico (una situación problemática que obliga el usuario a emprender acciones para resolverla) con dos resultados posibles:</p>
+          <ul>
+            <li>Resuelve el conflicto (gana)</li>
+            <li>No resuelve el conflicto (pierde)</li>
+          </ul>
+          <p class="card-text">El mini juego debe tener:</p>
+          <ul>
+            <li>Instrucciones y créditos.</li>
+            <li>Un control para reiniciar el juego.</li>
+            <li>Desarrollado en Programación Orientada a Objetos</li>
+            <li>4 ó mas clases de objetos</li>
+          </ul>
+          <iframe src="tpfinalparte2/index.html" frameborder="0" width="640" height="500"></iframe>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
