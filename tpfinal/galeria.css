@@ -1,0 +1,8 @@
+.leer2{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+    color: #e4dede;
+    font-family: Jacques Francois, serif;
+}

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Lora:ital,wght@0,400..700;1,400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Jacques+Francois&family=Lora:ital,wght@0,400..700;1,400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+   background: linear-gradient(to bottom, #1d1630,  #EBD5BC); 
+   color: #ffffff; 
+   font-family: "Irish Grover", system-ui;
+   text-align: center;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #ffffff; 
+}
+
+.navbar .nav-link:hover {
+    color: #ffdc72; 
+}
+
+html {
+    height: auto;
+    min-height: 500%;
+}
+
+.titulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.titulos h1, 
+.titulos h2,
+.titulos p {
+    margin-bottom: 20px;
+}
+
+.titulos h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #e4dede;
+    font-family: "Irish Grover", system-ui;
+}
+
+.titulosuno h1 {
+   font-size: 4rem;
+   font-weight: bold;
+   color: #e4dede;
+   font-family: "Irish Grover", system-ui;
+   padding: 40px 0;
+   margin-left: 8%;
+}
+
+.titulos h3 {
+   font-size: 2rem;
+   font-family: "Irish Grover", system-ui;
+   color: #e4dede;
+}
+
+.titulos p {
+   font-family: "Irish Grover", system-ui;
+   font-size: 2rem;
+   color: rgb(255, 255, 255);
+}
+
+.navbar {
+  background-color: #1d1630; 
+  box-shadow: 0 4px 8px rgba(67, 63, 71, 0.2), 0 4px 8px rgba(165, 162, 162, 0.2);
+  font-family: "Irish Grover", system-ui;
+}
+
+.navbar-nav .nav-item {
+  margin-left: 20px; 
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.1rem;
+  font-weight: bold; 
+}
+
+.navbar-nav .nav-link:hover {
+  color: rgb(255, 228, 146);
+}
+/* botones */
+
+.btn {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 2px solid #171424;
+  border-radius: 0.6em;
+  color: #6b7de0;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Jacques Francois, serif;
+  font-weight: 700;
+}
+.btn:hover, .btn:focus {
+  color: #fff;
+  outline: 0;
+}
+
+.first {
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+.first:hover {
+  box-shadow: 0 0 40px 40px #75a0fc inset;
+}
