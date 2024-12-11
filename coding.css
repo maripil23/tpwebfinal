@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Lora:ital,wght@0,400..700;1,400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Jacques+Francois&family=Lora:ital,wght@0,400..700;1,400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Jacques+Francois&family=Lora:ital,wght@0,400..700;1,400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');     
 
 * {
     margin: 0;
@@ -110,6 +110,7 @@ html {
   border-radius: 20px;
   color: white;
   font-size: 1.2rem;
+  font-family: "Irish Grover", system-ui !important;
   font-weight: bold;
   padding: 10px 30px;
   cursor: pointer;
@@ -118,7 +119,8 @@ html {
 }
 
 .btn:hover {
-  background: linear-gradient(45deg, #ffc260, #674de4);
+  background: linear-gradient(45deg, #f9a341, #fff4a3);
+  color: rgb(29, 28, 31);
   transform: translateY(-3px);
 }
 
@@ -127,11 +129,47 @@ html {
 .card{
   width: 50 rem;
   height: auto;
+  background-color: rgb(70, 70, 138);
+  
 }
-.imagenparteuno{
+.card-body{
   width: 10 rem;
-  height: 10 rem;
+  height: auto;
+  background-color:  rgb(216, 216, 255);
+  color: white;
 }
+.card img {
+  max-width: 100%; /* Asegura que no exceda el ancho del contenedor */
+  max-height: 300px; /* Limita la altura máxima */
+  width: auto; /* Ajusta proporcionalmente */
+  height: auto; /* Mantiene proporciones */
+  margin: 0 auto; /* Opcional, centrado horizontal */
+  text-align: left;
+}
+.card .container-fluid {
+  background-color: #2d1e39; /* Cambia al color que desees */
+  padding: 15px; /* Opcional, para que el contenido se vea mejor */
+  border-radius: 10px; /* Opcional, redondear esquinas */
+  color: white;
+  font-family: Jacques Francois, serif;
+}
+.card-title{
+  font-family: "Irish Grover", system-ui !important;
+  font-size: 200%;
+}
+.card-text{
+  font-family: Jacques Francois, serif;
+  font-size: 110%;
+}
+
+
+
+
+
+
+
+
+
 
 
 
