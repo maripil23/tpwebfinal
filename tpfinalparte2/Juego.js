@@ -10,7 +10,6 @@ class Juego{
     this.posYVida = 0;
     this.posXVida = [];
     this.corazon = imagenes[9];
-    this.sonido = false;
     for (let i=0; i < 3; i++){  
       this.posXVida[i] = 50*i;
     }
@@ -40,11 +39,8 @@ class Juego{
   colisionLanza(lanza){
     if( lanza.obtenerPosicionY() <= 480 && dist(lanza.obtenerPosicionX(), lanza.obtenerPosicionY(), this.personaje.obtenerPosicionX(), this.personaje.obtenerPosicionY() ) < 50){
       lanza.eliminar();
-      sonidos[3].play();
       if (this.personaje.restarVida() == true){
         this.cambiarEscena(5);       
-        this.detenerSonido();
-        sonidos[1].play();
       }
     }
   }
@@ -52,11 +48,6 @@ class Juego{
   chequeos(){
     image(imagenes[this.obtenerEscena()], 0, 0);
     if(objJuego.obtenerEscena() === 3){
-      if(this.sonido == false){
-        this.sonido = true
-        sonidos[0].loop = true;
-        sonidos[0].play();
-      }
       this.dibujarCorazones();
       this.dibujar();
       let lanzas = this.enemigo.obtenerLanzas();    
@@ -80,13 +71,11 @@ class Juego{
         this.gano = true;
         this.cambiarEscena(4);
         this.detenerSonido();
-        sonidos[2].play();
         
       }
     }
     else if(keyCode === 82){
       this.cambiarEscena(1);
-      this.detenerSonido();
       this.resetear();
     }
     else{
@@ -117,15 +106,7 @@ class Juego{
       }
     }
   }
-    
   cambiarEscena(nuevaEscena){
     this.escenaActual = nuevaEscena;
   }
-  
-  detenerSonido(){
-    if (sonidos[0].isPlaying()){
-      this.sonido = false;
-      sonidos[0].stop();
-    }
   }
-}
