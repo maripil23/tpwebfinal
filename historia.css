@@ -95,6 +95,7 @@ html {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  background-color: #384a71;
   color: #fff;
   border: 2px solid #171424;
   border-radius: 0.6em;
@@ -109,7 +110,7 @@ html {
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
-  
+  font-family: Jacques Francois, serif;
   font-weight: 700;
   box-shadow: 0 0 40px 40px #384a71 inset;
   
