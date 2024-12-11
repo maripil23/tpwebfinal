@@ -45,21 +45,23 @@
     </div>
   </header>
 
-  <!-- Botones centrados -->
   <div class="d-flex justify-content-center gap-2 my-3">
-    <a class="btn btn-primary" data-bs-toggle="collapse" href="#parte1" role="button" aria-expanded="false" aria-controls="collapseExample">
+    <!-- Botón Parte 1 -->
+    <a class="btn btn-primary" data-bs-toggle="collapse" href="#parte1" role="button" aria-expanded="false" aria-controls="parte1">
       Parte 1
     </a>
-    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" href="#parte2" data-bs-target="#parte2" aria-expanded="false" aria-controls="collapseExample">
+    <!-- Botón Parte 2 -->
+    <a class="btn btn-primary" data-bs-toggle="collapse" href="#parte2" role="button" aria-expanded="false" aria-controls="parte2">
       Parte 2
-    </button>
+    </a>
   </div>
-
   <!-- Parte 1 - Tarjetas centradas -->
   <div class="collapse" id="parte1">
     <div class="d-flex justify-content-center my-4">
+      <div class="consigna container-fluid">
       <div class="card">
         <div class="card-body">
+          <div class="container-fluid">
           <h3 class="card-title">Consigna</h3>
           <p class="card-text">Desarrollo del flujo principal del relato: la historia debe estar articulada en 12 (15 mejor) pantallas (cómo mínimo) y 3 finales diferentes. Cada pantalla debe tener:.</p>
           <ul>
@@ -69,33 +71,74 @@
           </ul>
           <p class="card-text">Al llegar a cualquiera de los finales se debe permitir volver al inicio y comenzar nuevamente.</p>
           <p class="card-text">Una pantalla de créditos con los datos del alumno y el autor de la obra.</p>
-          <h4 class="card-title">Antes de empezar, cabe destacar que básicamente el corazón de nuestro código son las funciones.</h4>
+        </div>
+        <br>
+        <center>
+          <h4 class="card-title">Antes de empezar, cabe destacar, que básicamente el corazón de nuestro código son las funciones que lo componen.</h4>
+        </center>
           <br>
           <h5 class="card-title">Pantallas</h5>
           <p class="card-text">Para las pantallas hicimos dos funciones fundamentales, además de que depende de un arreglo de imágenes.</p>
-          <img src="arreglodeimagenes.png" class="imagenparteuno img-fluid">
+          <img src="arreglodeimagenes.png" class="img-fluid imagenparteuno ">
+          <br> <br>
           <p class="card-text">Teníamos 16 imágenes que las cargamos en el preload indicando la ruta de las mismas, 
             nombrando a cada imagen con el número que corresponde a la posición del arreglo en el que se encuentran.</p>
-          <img src="funcionpantallas.png" class="imagenparteuno img-fluid">
+          <br>
+            <img src="funcionpantallas.png" class="img-fluid imagenparteuno  ">
+          <br><br>
           <p class="card-text">Principalmente, la función cambiar escena y ejecutar botones el cual funciona a base de condicionales y gracias a la función cambiar escena, es lo que hace que se muevan las pantallas.</p>
           <br>
-          <img src="funcionpantallasdos.png" class="imagenparteuno img-fluid">
+          <img src="funcionpantallasdos.png" class="img-fluid imagenparteuno ">
+          <br><br>
           <p class="card-text">La función ejecutarRectYText es para que se visualice correctamente el texto y se dibujen los botones en la pantalla.</p>
           <br>
-          <img src="funcionpantallastres.png" class="imagenparteuno img-fluid">
-          <br>
+          <img src="funcionpantallastres.png" class="img-fluid imagenparteuno  ">
+          <br><br>
           <p class="card-text">Y esta función es la que detecta la zona en la que se pueden presionar los botones.</p>
-        </div>
-      
+          <iframe src="tpfinalparte1/" frameborder="0" width="640" height="500"></iframe>
+          <br> <br>
+          <h5 class="card-title">Sonido</h5>
+          <p class="card-text">Para esto tuvimos que agregar en la pestaña index.html la libreria. Luego en la carpeta libreria, agregamos el archivo p5.sound.
+            Seleccionamos el audio que nos gusto, en este caso convertimos un video de youtube a mp3, le indicamos nombre y ruta y en la función preload lo cargamos. 
+            El sonido se ejecuta a traves de una condición en la función “ejecutarBotones”, cuando el usuario está en la escenaActual 1 y este presiona el botón que corresponde al rectanguloCentro comienza a correr la historia y su música de ambiente.
+            Siempre que la persona regrese a la pantalla principal (en este caso escenaActual 1)  luego de recorrer las opciones, el audio dejará de reproducirse volviendo a tener que presionar el boton para darle play.
+            </p>
+          <img src="librerias.png" class="img-fluid imagenparteuno ">
+          <br> <br>
+          <h5 class="card-title">Imágenes</h5>
+          <p class="card-text">Las imagenes fueron dibujadas por nosotras.
+            </p>
+            <a class="btn btn-primary" href="galeria.html">Galería</a>
+          <br> <br>
+          <h5 class="card-title">Reset</h5>
+          <p class="card-text">Se puede resetear todo en cualquier momento apretando la tecla R, gracias a function keyPressed().
+            En nuestro caso, hicimos una funcion llamada resetear, y la llamamos en keyPressed.
+            </p>
+            <div class="row align-items-start">
+              <div class="col">
+          <img src="resetearuno.png" class="img-fluid imagenparteuno ">
+          </div>
+          <div class="col">
+            <img src="reseteardos.png" class="img-fluid imagenparteuno ">
+          </div>
+            </div>
+          <br> <br>
       </div>
+      </div>
+    </div>
   </div>
+  </div>
+</div>
+  </div>
+
 
   <!-- Parte 2 - Tarjetas centradas -->
   <div class="collapse"  id="parte2">
     <div class="d-flex justify-content-center my-4">
+      
       <div class="card">
-     
         <div class="card-body">
+          <div class="container-fluid">
           <h3 class="card-title">Consigna</h3>
           <p class="card-text">Incorporar una funcionalidad dentro del flujo del relato a partir de un conflicto de carácter lúdico (una situación problemática que obliga el usuario a emprender acciones para resolverla) con dos resultados posibles:</p>
           <ul>
@@ -109,11 +152,14 @@
             <li>Desarrollado en Programación Orientada a Objetos</li>
             <li>4 ó mas clases de objetos</li>
           </ul>
-          <iframe src="tpfinalparte2/" frameborder="0" width="640" height="500"></iframe>
          
+        </div>
+        <br> <br>
+        <iframe src="tpfinalparte2/index.html" frameborder="0" width="640" height="500"></iframe>
         </div>
       </div>
     </div>
+  </div>
   </div>
  
 
