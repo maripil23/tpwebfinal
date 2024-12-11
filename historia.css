@@ -95,10 +95,9 @@ html {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background-color: transparent;
+  color: #fff;
   border: 2px solid #171424;
   border-radius: 0.6em;
-  color: #6b7de0;
   cursor: pointer;
   display: flex;
   align-self: center;
@@ -110,17 +109,26 @@ html {
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
-  font-family: Jacques Francois, serif;
+  
   font-weight: 700;
+  box-shadow: 0 0 40px 40px #384a71 inset;
+  
 }
 .btn:hover, .btn:focus {
-  color: #fff;
   outline: 0;
+  font-family: Jacques Francois, serif;
 }
 
 .first {
+  
   transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  
 }
 .first:hover {
   box-shadow: 0 0 40px 40px #75a0fc inset;
+  
+}
+
+.col{
+  font-family:Jacques Francois, serif;
 }
