@@ -1,4 +1,4 @@
-class Enemigo extends Personaje{
+class enemigo extends personaje{
   constructor(posX, posY, imagen, velocidad){   
     super(posX, posY, imagen, velocidad)
     this.lanzas = [];
