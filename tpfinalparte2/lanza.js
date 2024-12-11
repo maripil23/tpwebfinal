@@ -1,4 +1,4 @@
-class Lanza{
+class lanza{
   
   constructor(posX, posY, imagen){
     this.posX = posX;
