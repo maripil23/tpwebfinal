@@ -1,4 +1,4 @@
-class Juego{ 
+class juego{ 
   constructor(){
     this.crearEnemigo();
     this.crearPersonaje();
