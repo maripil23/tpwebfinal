@@ -13,7 +13,7 @@ function preload() {
   
   let cantidadImagenes = 10;
   for (let i = 0; i < cantidadImagenes ; i++) {
-    let rutasImagenes = 'images/img' + i + '.png'; //Guardar ruta: rutasImagenes[images/img0.jpg, images/img1.jpg, images/img2.jpg]
+    let rutasImagenes = 'data/images/img' + i + '.png'; //Guardar ruta: rutasImagenes[images/img0.jpg, images/img1.jpg, images/img2.jpg]
     imagenes[i] = loadImage(rutasImagenes);  //Cargar imagen: imagenes[img0, img1, img2]
   }
 }
