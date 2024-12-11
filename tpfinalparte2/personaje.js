@@ -1,4 +1,4 @@
-class Personaje{ // pestaña para herencia, reune las caracteristicas compartidas de los personajes (enemigo y jugador)
+class personaje{ // pestaña para herencia, reune las caracteristicas compartidas de los personajes (enemigo y jugador)
   constructor(posX, posY, imagen, velocidad){
     this.posXInicial = posX;
     this.posYInicial = posY;
