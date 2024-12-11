@@ -1,15 +1,8 @@
 // Floch Micaela, Fernandez Maria Pilar. Comision 1.
 // link yt
-let objJuego, imagenes = [], sonidos = [];
+let objJuego, imagenes = [];
 
 function preload() {
-  let cantidadSonidos = 4;
-  for (let i = 0; i < cantidadSonidos; i++){
-     let rutasSonidos = 'data/audio' + i + '.mp3';
-     console.log(rutasSonidos);
-     sonidos[i] = loadSound(rutasSonidos);
-  }
-  
   
   let cantidadImagenes = 10;
   for (let i = 0; i < cantidadImagenes ; i++) {
